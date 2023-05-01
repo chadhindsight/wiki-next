@@ -1,9 +1,8 @@
-
 const Header = () => {
     return (
-        <>
-            Header content soon come
-        </>
+        <header className="bg-blue-600 py-4">
+            <h1 className="text-white capitalize Header">Wiki Viewer</h1>
+        </header>
     );
 };
 
