@@ -1,7 +1,7 @@
 
 const Footer = () => {
     return (
-        <footer className="text-center text-white dark:bg-neutral-600">
+        <footer className="text-center text-white dark:bg-neutral-600" style={{ marginTop: "40%" }}>
             <div className="container pt-9">
                 <div className="mb-9 flex justify-center">
 
