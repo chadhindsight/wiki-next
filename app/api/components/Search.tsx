@@ -40,10 +40,10 @@ const Search = () => {
         return results?.map(result => {
 
             const url = encodeURI(`https://en.wikipedia.org/wiki/${result.title}`);
-            console.log(result.title, query)
+            console.log(result.title, query, url)
             return (
 
-                <a ng-href={url} target="_blank" ng-repeat="result in results" className="ng-scope" href="https://en.wikipedia.org/?curid=6678">
+                <a href={url} target="_blank" ng-repeat="result in results" className="ng-scope">
                     <li>
                         <h3 className="ng-binding">{result.title}</h3>
                         {/* <p className="ng-binding">{result.snippet}</p> */}
