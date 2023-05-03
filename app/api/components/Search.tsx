@@ -38,15 +38,18 @@ const Search = () => {
 
     const displayResults = function () {
         return results?.map(result => {
+            const { title, snippet } = result
+            const url = encodeURI(`https://en.wikipedia.org/wiki/${title}`);
 
-            const url = encodeURI(`https://en.wikipedia.org/wiki/${result.title}`);
-            console.log(result.title, query, url)
+            const spanRemoved = snippet.replace(/<\/?span[^>]*>/g, "")
+            const formattedString = spanRemoved.replaceAll("&quot;", "")
+            console.log(formattedString)
             return (
 
                 <a href={url} target="_blank" className="">
                     <li>
-                        <h3 className="">{result.title}</h3>
-                        {/* <p className="">{result.snippet}</p> */}
+                        <h3 className="">{title}</h3>
+                        <p className="" style={{ marginBottom: '2%' }}>{formattedString}</p>
                     </li>
 
                 </a>
