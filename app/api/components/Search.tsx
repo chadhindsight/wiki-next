@@ -49,7 +49,7 @@ const Search = () => {
                 <a href={url} target="_blank" className="">
                     <li>
                         <h2 className="">{title}</h2>
-                        <p className="" style={{ marginBottom: '2%' }}>{formattedString}</p>
+                        <p className="" style={{ marginBottom: '2%' }}>{formattedString}...</p>
                     </li>
 
                 </a>
