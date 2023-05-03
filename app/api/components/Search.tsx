@@ -43,10 +43,10 @@ const Search = () => {
             console.log(result.title, query, url)
             return (
 
-                <a href={url} target="_blank" ng-repeat="result in results" className="ng-scope">
+                <a href={url} target="_blank" className="">
                     <li>
-                        <h3 className="ng-binding">{result.title}</h3>
-                        {/* <p className="ng-binding">{result.snippet}</p> */}
+                        <h3 className="">{result.title}</h3>
+                        {/* <p className="">{result.snippet}</p> */}
                     </li>
 
                 </a>
