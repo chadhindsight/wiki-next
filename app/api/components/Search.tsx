@@ -39,27 +39,28 @@ const Search = () => {
     const displayResults = function () {
         return results?.map(result => {
 
-            // console.log(Object.keys(result), 'dsfsd')
-            console.log(result)
+            const url = encodeURI(`https://en.wikipedia.org/wiki/${result.title}`);
+            console.log(result.title, query)
             return (
 
-                <a ng-href="https://en.wikipedia.org/?curid=6678" target="_blank" ng-repeat="result in results" class="ng-scope" href="https://en.wikipedia.org/?curid=6678">
+                <a ng-href={url} target="_blank" ng-repeat="result in results" className="ng-scope" href="https://en.wikipedia.org/?curid=6678">
                     <li>
-                        <h1 className="ng-binding">Cat</h1>
-                        <p className="ng-binding">The cat (Felis catus) is a domestic species of small carnivorous mammal.</p>
+                        <h3 className="ng-binding">{result.title}</h3>
+                        {/* <p className="ng-binding">{result.snippet}</p> */}
                     </li>
+
                 </a>
             )
 
         })
     }
-    displayResults()
+
     return (
         <>
             <form onSubmit={handleSubmit}>
                 <input value={query} onChange={(e) => setQuery(e.target.value)} />
             </form>
-            <ul>{ }</ul>
+            <ul>{displayResults()}</ul>
         </>
     );
 };
