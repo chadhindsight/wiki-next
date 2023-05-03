@@ -12,7 +12,7 @@ interface Details {
     wordcount: string
 }
 
-const endpoint = `https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&inprop=url&utf8=&format=json&origin=*&srlimit=20&srsearch=`;
+const endpoint = `https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&inprop=url&utf8=&format=json&origin=*&srlimit=10&srsearch=`;
 
 const Search = () => {
     // State to track userInput
@@ -48,7 +48,7 @@ const Search = () => {
 
                 <a href={url} target="_blank" className="">
                     <li>
-                        <h3 className="">{title}</h3>
+                        <h2 className="">{title}</h2>
                         <p className="" style={{ marginBottom: '2%' }}>{formattedString}</p>
                     </li>
 
