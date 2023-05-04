@@ -36,7 +36,7 @@ const Search = () => {
         setQuery("")
     }
 
-    const displayResults = function () {
+    const displayResults = () => {
         return results?.map(result => {
             const { title, snippet } = result
             const url = encodeURI(`https://en.wikipedia.org/wiki/${title}`);
@@ -47,10 +47,10 @@ const Search = () => {
 
             return (
 
-                <a href={url} target="_blank" className="">
-                    <li>
-                        <h2 className="">{title}</h2>
-                        <p className="" style={{ marginBottom: '2%' }}>{formattedString}...</p>
+                <a href={url} target="_blank">
+                    <li className="card">
+                        <h2 className="text-4xl font-extrabold result-head">{title}</h2>
+                        <p className="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400" style={{ marginBottom: '2%' }}>{formattedString}...</p>
                     </li>
                 </a>
             )
