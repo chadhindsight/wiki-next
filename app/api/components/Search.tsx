@@ -52,7 +52,6 @@ const Search = () => {
                         <h2 className="">{title}</h2>
                         <p className="" style={{ marginBottom: '2%' }}>{formattedString}...</p>
                     </li>
-
                 </a>
             )
 
@@ -64,6 +63,7 @@ const Search = () => {
             <form onSubmit={handleSubmit}>
                 <input value={query} onChange={(e) => setQuery(e.target.value)} />
             </form>
+            <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" rel="noopener">I'm feeling lucky!</a>
             <ul>{displayResults()}</ul>
         </>
     );
