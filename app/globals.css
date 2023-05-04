@@ -117,3 +117,14 @@ a {
 footer {
   width: 100%;
 }
+
+/* Search results styling */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 1rem;
+
+  background-color: #fff;
+  color: #333;
+}

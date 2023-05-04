@@ -47,8 +47,8 @@ const Search = () => {
 
             return (
 
-                <a href={url} target="_blank" className="">
-                    <li>
+                <a href={url} target="_blank">
+                    <li className="card">
                         <h2 className="">{title}</h2>
                         <p className="" style={{ marginBottom: '2%' }}>{formattedString}...</p>
                     </li>
