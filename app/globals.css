@@ -132,3 +132,7 @@ footer {
 .result-head {
   margin-bottom: 1%;
 }
+
+.card:hover {
+  border: 3px solid rgb(156, 163, 175);
+}
