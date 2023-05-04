@@ -41,7 +41,7 @@ const Search = () => {
             const { title, snippet } = result
             const url = encodeURI(`https://en.wikipedia.org/wiki/${title}`);
 
-            // Remove tags and special chars
+            // Remove tags and special chars from snippet
             const spanRemoved = snippet.replace(/<\/?span[^>]*>/g, "")
             const formattedString = spanRemoved.replaceAll("&quot;", "")
 
