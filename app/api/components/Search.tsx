@@ -41,9 +41,10 @@ const Search = () => {
             const { title, snippet } = result
             const url = encodeURI(`https://en.wikipedia.org/wiki/${title}`);
 
+            // Remove tags and special chars
             const spanRemoved = snippet.replace(/<\/?span[^>]*>/g, "")
             const formattedString = spanRemoved.replaceAll("&quot;", "")
-            console.log(formattedString)
+
             return (
 
                 <a href={url} target="_blank" className="">
