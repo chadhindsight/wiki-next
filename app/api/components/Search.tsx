@@ -36,7 +36,7 @@ const Search = () => {
         setQuery("")
     }
 
-    const displayResults = function () {
+    const displayResults = () => {
         return results?.map(result => {
             const { title, snippet } = result
             const url = encodeURI(`https://en.wikipedia.org/wiki/${title}`);
