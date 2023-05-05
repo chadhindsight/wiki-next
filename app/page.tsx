@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Header />
       <main className={styles.main}>
-        <p className="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Enter your search query below and a list of related search results will be listed. From there, you can select any of them to be
+        <p className="mb-6 text-lg font-normal text-neutral-700 lg:text-xl sm:px-16 xl:px-48 dark:text-neutral-400">Enter your search query below and a list of related search results will be listed. From there, you can select any of them to be
           redirected to the corresponding Wikipedia article.
         </p>
         <Search />
