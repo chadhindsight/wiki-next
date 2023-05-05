@@ -63,7 +63,7 @@ const Search = () => {
             <form onSubmit={handleSubmit}>
                 <input value={query} onChange={(e) => setQuery(e.target.value)} />
             </form>
-            <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" rel="noopener">I'm feeling lucky!</a>
+            <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" rel="noopener" className="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:dark: text-neutral-400">I'm feeling lucky!</a>
             <ul>{displayResults()}</ul>
         </>
     );
