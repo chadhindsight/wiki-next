@@ -10,6 +10,8 @@ This project Uses the MediaWiki API to replicate the search function and random 
 3. A user selects on of those results to get redirected to the related article entry on Wikipedia.
 4. A user also has the ability to get a random article by clicking the "I'm feeling lucky!" option.
 
+https://user-images.githubusercontent.com/16522246/236631002-cbbe4356-05e5-481e-968b-02543954ad6a.mov
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
