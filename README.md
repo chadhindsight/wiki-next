@@ -1,3 +1,17 @@
+# Wiki Viewer
+This project Uses the MediaWiki API to replicate the search function and random article function, similar to the functionality found on Wikipedia.
+
+![Screen Shot 2023-05-06 at 10 33 32 AM](https://user-images.githubusercontent.com/16522246/236630557-ba4d6c48-a973-4989-a2c8-fb09a7f83d6a.png)
+
+## How it works
+
+1. Once the site loads, a user enters their search word or phrase in to the input field.
+2. A list of corresponding results is listed to the user.
+3. A user selects on of those results to get redirected to the related article entry on Wikipedia.
+4. A user also has the ability to get a random article by clicking the "I'm feeling lucky!" option.
+
+https://user-images.githubusercontent.com/16522246/236631002-cbbe4356-05e5-481e-968b-02543954ad6a.mov
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -28,9 +42,3 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
