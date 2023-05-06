@@ -8,6 +8,7 @@ This project Uses the MediaWiki API to replicate the search function and random 
 1. Once the site loads, a user enters their search word or phrase in to the input field.
 2. A list of corresponding results is listed to the user.
 3. A user selects on of those results to get redirected to the related article entry on Wikipedia.
+4. A user also has the ability to get a random article by clicking the "I'm feeling lucky!" option.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
