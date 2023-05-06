@@ -1,6 +1,7 @@
 # Wiki Viewer
-
 This project Uses the MediaWiki API to replicate the search function and random article function, similar to the functionality found on Wikipedia.
+
+![Screen Shot 2023-05-06 at 10 33 32 AM](https://user-images.githubusercontent.com/16522246/236630557-ba4d6c48-a973-4989-a2c8-fb09a7f83d6a.png)
 
 ## How it works
 
