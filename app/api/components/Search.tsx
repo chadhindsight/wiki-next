@@ -62,7 +62,7 @@ const Search = () => {
         <>
             <form onSubmit={handleSubmit}>
                 {/* <input value={query} onChange={(e) => setQuery(e.target.value)} /> */}
-                <input type="search" id="default-search" className="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Here..." required value={query} onChange={(e) => setQuery(e.target.value)} />
+                <input type="search" id="default-search" className="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Here..." value={query} onChange={(e) => setQuery(e.target.value)} />
                 <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" rel="noopener" className="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:dark: text-neutral-400">I'm feeling lucky!</a>
             </form>
             <ul>{displayResults()}</ul>
